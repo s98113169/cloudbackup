@@ -1,0 +1,23 @@
+{
+  "name": "summer",
+  "authors": [
+    "Kenneth Hsu <hkenneth@osmuir.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0"
+  }
+}

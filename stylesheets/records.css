@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* line 21, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/records.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 14, ../sass/records.scss */
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  font-family: "微軟正黑體", Arial, Tahoma, Helvetica, "Microsoft Yahei","微軟正黑體", STXihei, "华文细黑", sans-serif;
+  color: #333;
+}
+
+/* line 25, ../sass/records.scss */
+h1 {
+  line-height: 1;
+}
+
+/* line 29, ../sass/records.scss */
+h3 {
+  color: #0068b7;
+}
+
+/* line 34, ../sass/records.scss */
+.table table {
+  width: 1700px;
+}
+
+/* line 39, ../sass/records.scss */
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+/* line 44, ../sass/records.scss */
+th {
+  width: 100px;
+}
+
+/* line 48, ../sass/records.scss */
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* line 52, ../sass/records.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 55, ../sass/records.scss */
+#logout, .export {
+  float: left;
+  background-color: #cc0000;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+/* line 63, ../sass/records.scss */
+.export {
+  background-color: #111;
+  padding: 5px 20px;
+  float: left;
+  border: none;
+  margin-right: 50px;
+  display: inline-block;
+}

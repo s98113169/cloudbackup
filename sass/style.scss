@@ -1,0 +1,750 @@
+// Screen
+// ======
+// 
+$desktop: 560px;
+$mobile: max-width 560px;
+$lg-desktop: 1280px;
+
+@import "grids";
+@import "breakpoint";
+
+body, html {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	line-height: 1.8;
+	// font-family: sans-serif;
+	font-family: "微軟正黑體", Arial, Tahoma, Helvetica, "Microsoft Yahei","微軟正黑體", STXihei, "华文细黑", sans-serif;
+	color: #333;
+	font-size: 1.1em;
+	
+}
+
+h1 {
+	line-height: 1;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	color: #0068b7;
+}
+
+.yellow {
+	color: #ffff00;
+}
+
+.content {
+	@include container;
+}
+
+hr {
+	@include container;
+}
+
+header {
+	background: url(/img/header_bg.png);
+	height: 485px;
+	padding-top: 30px;
+	.logo {
+		padding-left: 20px;
+	}
+
+	.content {
+		height: 100%;
+		
+		background: url(/img/buildings.png) bottom right no-repeat;
+		@include breakpoint($mobile){
+			background: url(/img/mobile_building.png) bottom no-repeat;
+			background-size: contain;
+		}
+		// background-size: cover;
+		color: #fff;
+
+		h1 {
+			margin-bottom: 0;
+			font-size: 2.3em;
+		}
+		h2 {
+			font-size: 1.8em;
+			margin: 0;
+			font-weight: bold;
+		}
+		p {
+			font-weight: normal;
+			font-size: 1.4em;
+		}
+
+		.topmsg {
+			@include span(8);
+			@include push(1);
+			margin-top: 20px;
+		}
+	}
+}
+
+.header {
+	background: url(/img/header_bg.png) bottom;
+	h1, h2 {
+		color: #fff;
+		line-height: 1.5;
+		margin: 0;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+	p {
+		color: #fff;
+		font-weight: light;
+	}
+}
+
+.header-form {
+	background: url(/img/header_bg.png);
+	height: 380px;
+	padding-top: 30px;
+	
+	.logo {
+		@include span(11 of 12);
+		padding-left: 20px;
+	}
+
+	.backbn {
+		@include span(1 of 12 last);
+	}
+	.content {
+		height: 100%;
+		background: url(/img/form_building.png) bottom no-repeat;
+		background-size: cover;
+		color: #fff;
+
+		.topmsg {
+			@include span(12);
+			
+			margin-top: 50px;
+			
+			@include breakpoint($desktop){
+				margin-left: 50px;
+			} 
+
+			h2 {
+				line-height: 1.5em;
+				font-weight: normal;
+			}
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.logo {
+			@include span(6);
+		}
+
+		.backbn {
+			@include span(2 last);
+		}
+	}
+
+}
+
+
+footer {
+
+	height: 80px;
+	.logo {
+		@include span(12);
+		
+		padding-top: 16px;
+		img {
+			width: 50%;
+		}
+
+		@include breakpoint($desktop) {
+			@include span(2);
+			img {
+				width: 100%;
+			}
+		}
+		
+	}
+	p {
+		@include span(8);
+		text-align: center;
+		font-size: 0.9em;
+	}
+	@include breakpoint($mobile){
+		text-align: center;
+		font-size: 0.8em;
+		p {
+			@include span(8);
+			@include push(2);
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	transition: all 0.2s;
+	font-weight: bold;
+
+	@include breakpoint($mobile) {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #fff;
+	img {
+		display: inline-block;
+	}
+
+	&:after {
+		content: ">";
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	&:hover {
+		background-color: #222;
+		color: #fff;
+	}
+}
+
+.button.red {
+	@extend .button;
+	background-color: #e5004f;
+	border-bottom: 5px solid #a40000;
+	color: #fff;
+	display: inline-block;
+	width: 270px;
+	margin-top: 20px;
+
+	&:hover {
+		background-color: #222;
+		color: #fff;
+	}
+}
+
+.bn-thankyou {
+	padding: 10px 50px;
+	background-color: #e5004f;
+	border-bottom: 5px solid #a40000;
+	color: #fff;
+
+}
+
+
+
+section {
+	padding: 30px;
+}
+
+.table {
+	table {
+		width: 1700px;
+	}
+}
+
+form {
+	
+	@include breakpoint($desktop) {
+		@include span(10);
+		@include push(1);
+		border: 1px solid #ccc;
+		padding: 50px;
+	}
+	
+	
+
+	@include breakpoint($mobile) {
+		@include span(12);
+		padding: 10px;
+	}
+
+	label.wide {
+		// width: 208px;
+		display: inline-block;
+		&:before {
+			content: "■ "
+		}
+	}
+
+	label.required {
+		&:after {
+			content: " *";
+			color: red;
+		}
+	}
+
+	input {
+		padding: 5px 10px;
+		background-color: #eee;
+		border: none;
+	}
+
+	input[type="text"]{
+		@include span(8);
+		@include breakpoint($mobile){
+			@include span(12);
+			padding: 10px;
+
+		}
+	}
+
+	.form-row {
+		margin-bottom: 10px;
+		display: block;
+		overflow: hidden;
+		.red {
+			font-size: 0.8rem;
+			color: red;
+		}
+	}
+
+	.form-label {
+		@include span(4);
+
+		@include breakpoint($mobile){
+			@include span(12);
+			
+		}
+	}
+	.form-input {
+		@include span(8 last);
+
+		@include breakpoint($mobile) {
+			@include span(12);
+			
+		}
+	}
+
+	.block {
+		@include span(12);
+		background-color: #d1f0ff;
+		padding: 20px;
+		margin: 30px 0;
+		// text-align: center;
+	}
+
+	p {
+		@include span(12);
+
+		@include breakpoint($mobile) {
+			text-align: center;
+		}
+	}
+
+	.button {
+		text-decoration: none;
+		color: #000;
+		transition: all 0.2s;
+
+
+		background-color: #0071bc;
+		color: #fff;
+		border-bottom: 5px solid darkblue;
+		padding: 15px 20px;
+		font-size: 1.1em;
+		min-width: 200px;
+	}
+}
+
+.section1 {
+	.left {
+		@include span(9);
+		img {
+			max-width: 290px;
+		}
+	}
+	.right {
+		@include span(2 last);
+		img {
+			width: 100%;
+			max-width: 290px;
+
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.left, .right {
+			@include span(12);
+		}
+		.right {
+			margin-top: 40px;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.section2 {
+	.content {
+		background-color: #eee;
+		padding: 30px;
+		h3 {
+			text-align-last: left;
+		}
+		p {
+			text-align: left;
+		}
+	}
+	.left {
+		@include span(3);
+		text-align: center;
+		img {
+			width: 100%;
+			max-width: 214px;
+			margin-top: 10%;
+		}
+	}
+	.right {
+		@include span(8 last);
+	}
+
+	@include breakpoint($mobile) {
+		text-align: center;
+		.left, .right {
+			@include span(12);
+		}
+	}
+}
+
+.section3 {
+	
+	.content {
+		@include breakpoint($desktop){
+			h3 {
+				@include span(12);
+			}
+			p {
+				@include span(10);
+			}
+		}
+	}
+	.backtotop {
+		@include span(1);
+		margin-top: 20px;
+		position: fixed;
+		bottom: 50%;
+		right: 50px;
+		display: inline-block;
+		padding: 1em;
+		margin: 1em;
+		z-index: 900;
+		opacity: 0.6;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.section4 {
+	background-color: #0071bc;
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+
+	.left {
+		@include span(8);
+		@include push(1);
+		img {
+			width: 100%;
+		}
+	}
+
+
+	.right {
+		@include span(12);
+		@include breakpoint($desktop) {
+			@include span(3 last);
+		}
+		img {
+			width: 100%;
+			max-width:185px;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		display: block;
+		content: "";
+		width: 0;
+		height: 0;
+		left: 50%;
+		margin-left: -30px;
+		bottom: -60px;
+		border: 30px solid transparent;
+		border-top: 30px solid #0071bc;
+	}
+
+	@include breakpoint($mobile) {
+		text-align: center;
+		.left, .right {
+			@include span(12);
+		}
+		.left {
+			@include last;
+		}
+
+	}
+}
+
+.section5 {
+	.banner {
+		@include span(12);
+		height: 100px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+		img {
+			width: 100%;
+			max-width: 913px;
+		}
+
+		@include breakpoint($desktop) {
+			@include span(12);
+			
+			height: 100px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.desktop-banner {
+		margin: 0 auto;
+		height: 86px;
+		width: 100%;
+		color: #fff;
+		line-height: 300%;
+		max-width: 873px;
+		font-size: 26px;
+		background: url(/img/banner.png) no-repeat;
+		background-size: contain;
+
+		@include breakpoint($lg-desktop){
+			// font-size: 48px;
+		}
+
+	}
+
+	.mobile-banner{
+		margin: 0 auto;
+		height: 86px;
+		width: 100%;
+		color: #fff;
+		line-height: 2.5em;
+		max-width: 913px;
+		font-size: 2em;
+		background: url(/img/mobile_banner.png) center no-repeat;
+		background-size: contain;
+
+		@include breakpoint($lg-desktop){
+			font-size: 48px;
+		}
+	}
+	.p {
+		@include span(12);
+		text-align: center;
+	}
+}
+
+.thankyou {
+	.content {
+		margin-top: 50px;
+		text-align: center;
+		h1 {
+			font-size: 1.6em;
+		}
+		
+		@include breakpoint($desktop) {
+			text-align: left;
+			.left {
+				@include span(6);
+				@include push(1);
+			}
+			.right {
+				@include span(4);
+			}
+		}
+	}
+}
+
+.error {
+	color: #ff0000;	
+}
+.cols {
+	display: table;
+
+	@include span(12);
+	.three-col {
+		
+		text-align: center;
+		background-color: #eee;
+		padding: 50px 10px;
+		@include span(12);
+		// min-height: 410px;
+		overflow: hidden;
+		// height: auto;
+		float: none;
+		max-height: 380px;
+		
+		@include breakpoint($desktop) {
+			// @include span(4);
+			width: 30%;
+			float: none;
+			border-right: 5px solid #fff;
+			// vertical-align: top;
+			display: table-cell;
+		}
+		h1 {
+			font-size: 1.5em;
+		}
+		h2 {
+			font-size: 1em;
+		}
+		p {
+			font-size: 1em;
+			padding: 0 20px;
+		}
+		// &:last-of-type {
+		// 	@include last;
+		// }
+		margin-bottom: 30px;
+
+		// display: table-cell;
+	}
+}
+
+.hide-on-desktop {
+	@include breakpoint($desktop) {
+		display: none;
+	}
+}
+
+.hide-on-mobile {
+	@include breakpoint($mobile) {
+		display: none;
+	}
+}
+
+// Slider
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  @include span(12);
+  position: relative;
+  margin-bottom: 30px;
+}
+.unslider-wrap {
+  position: relative;
+}
+.unslider-wrap.unslider-carousel > li {
+  float: left;
+}
+.unslider-vertical > ul {
+  height: 100%;
+}
+.unslider-vertical li {
+  float: none;
+  width: 100%;
+}
+.unslider-fade {
+  position: relative;
+}
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10;
+}
+.unslider ul, .unslider ol, .unslider li {
+  list-style: none;
+  /* Reset any weird spacing */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.unslider-arrow {
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  top: 150px;
+  display: block;
+  width: 30px;
+  @include breakpoint($desktop) {
+  	display: none !important;
+  }
+}
+.unslider-arrow.next {
+  left: auto;
+  right: 0px;
+  background: #111;
+  color: #fff;
+  padding: 10px;
+  top: 150px;
+  position: absolute;
+  display: block;
+}
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+}
+.unslider-nav ol li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-size:5em;
+}
+.unslider-nav ol li.unslider-active {
+  background: #0071bc;
+  cursor: default;
+}
+
+@include breakpoint($desktop) {
+	.unslider-nav {
+		display: none !important;
+	}
+}
+

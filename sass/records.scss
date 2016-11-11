@@ -1,0 +1,71 @@
+// Screen
+// ======
+// 
+$desktop: 560px;
+$mobile: max-width 560px;
+$lg-desktop: 1280px;
+
+@import "grids";
+@import "breakpoint";
+
+body, html {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	line-height: 1.8;
+	// font-family: sans-serif;
+	font-family: "微軟正黑體", Arial, Tahoma, Helvetica, "Microsoft Yahei","微軟正黑體", STXihei, "华文细黑", sans-serif;
+	color: #333;
+
+	
+}
+
+h1 {
+	line-height: 1;
+}
+
+h3 {
+	color: #0068b7;
+}
+
+.table {
+	table {
+		width: 1700px;
+	}
+}
+
+thead {
+	background-color: #333;
+	color: #fff;
+}
+
+th {
+	width: 100px;
+}
+
+tr:nth-child(even) {
+	background-color: #eee;
+}
+
+a {
+	text-decoration: none;
+}
+#logout {
+	float: left;
+	background-color: #cc0000;
+	padding: 5px 20px;
+	color: #fff;
+
+}
+
+.export {
+	@extend #logout;
+	background-color: #111;
+	padding: 5px 20px;
+	float: left;
+	border: none;
+	margin-right: 50px;
+	display: inline-block;
+}

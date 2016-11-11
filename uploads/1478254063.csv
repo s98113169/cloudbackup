@@ -1,0 +1,31 @@
+id,question1,question2,question3,question4,question5,name,company_name,department,employees,title,telephone,email,timestamp
+31,vSphere,50萬(含)以內,虛擬機整機,已經導入(磁帶送到異地),microsoft_azure,Kenneth Hsu,osmuir,design,30,Creative director,9900099,hkenneth@osmuir.com,
+32,,,,已經導入(磁帶送到異地),,,,,,,,,
+33,vSphere, Linux,50~100(含)萬,實體機整機(Linux),已經導入(軟體抄寫),hicloud,點點滴滴,點點滴滴,點點滴滴,200~500人,點點滴滴,點點滴滴,點點滴滴,
+34,vSphere,50~100(含)萬,實體機整機(Windows),已經導入(軟體抄寫),hicloud,點點滴滴,點點滴滴,點點滴滴,50~200人,點點滴滴,點點滴滴,reachkenny@gmail.com,
+35,vSphere, Windows,50萬(含)以內,實體機整機(Windows),有需求無足夠預算,google_cloud,k,k,k,200~500人,kk,k,kenneth.hsu@kbamglobal.com,2016-10-29 19:30:02
+36,vSphere, Windows, Linux,50萬(含)以內,實體機整機(Windows),已經導入(磁帶送到異地),microsoft_azure,Anita,aaaa,aaaa,50~200人,kkk,lll,reachkenny@gmail.com,2016-10-29 19:37:58
+37,vSphere, Windows, Linux,100萬以上,實體機整機(Linux),有需求尚無適當場所,hicloud,anita,999,9,50~200人,9,9,reachkenny@gmail.com,2016-10-29 19:38:25
+38,vSphere,100萬以上,實體機/虛擬機資料庫,已經導入(軟體抄寫),google_cloud,Kenneth,dd,ss,50~200人,ddd,ddd,dddd,2016-10-29 19:41:35
+39,vSphere,50萬(含)以內,實體機整機(Linux),有需求無足夠預算,google_cloud,aaaa,aa,aa,50~200人,aa,sss,reachkenny@gmail.com,2016-10-29 19:42:28
+40,vSphere,50~100(含)萬,實體機整機(Linux),有需求尚無適當場所,google_cloud,a,a,a,50~200人,a,a,aks19103@yahoo.com.tw,2016-10-29 19:43:23
+41,vSphere, Windows,50~100(含)萬,實體機整機(Linux),有需求尚無適當場所,google_cloud,Kenneth,osmuir,design,200~500人,creative,0935366400,reachkenny@gmail.com,2016-10-30 15:53:49
+42,,,,,,,,,,d,,,2016-10-30 17:09:25
+43,,,,,,,,,,d,,,2016-10-30 17:09:50
+44,,,,,,,,,,d,,,2016-10-30 17:10:26
+45,,,,,,,,,,d,,,2016-10-30 17:12:04
+46,,,,,,,,,,d,,,2016-10-30 17:12:13
+47,,,,,,,,,,d,,,2016-10-30 17:12:37
+48,,,,,,,,,,d,,,2016-10-30 17:12:46
+49,,,,,,,,,,d,,,2016-10-30 17:13:11
+50,,,,,,,,,,d,,,2016-10-30 17:13:25
+51,,,,,,,,,,s,,,2016-10-30 17:13:34
+52,,,,,,,,,,s,,,2016-10-30 17:13:56
+53,,,,,,,,,,s,,,2016-10-30 17:15:14
+54,Windows,100萬以上,實體機整機(Windows),已經導入(軟體抄寫),aws,aaa,bbb,ccc,200~500人,sss,sss,reachkenny@gmail.com,2016-10-31 13:26:12
+55,Windows,100萬以上,實體機整機(Windows),已經導入(軟體抄寫),aws,aaa,bbb,ccc,200~500人,sss,sss,reachkenny@gmail.com,2016-10-31 13:26:47
+56,Windows,100萬以上,實體機整機(Windows),已經導入(軟體抄寫),aws,aaa,bbb,ccc,200~500人,sss,sss,reachkenny@gmail.com,2016-10-31 13:28:08
+57,"Linux",50~100(含)萬,實體機整機(Linux),有需求尚無適當場所,microsoft_office_365,Kenneth,osmuir,design,200~500人,creative,0935366400,reachkenny@gmail.com,2016-10-31 16:22:42
+58,["vSphere","Windows","Linux"],50萬(含)以內,實體機/虛擬機資料庫,已經導入(軟體抄寫),hicloud,ke,ke,ke,50~200人,ke,093563366,reachkenny@gamil.com,2016-10-31 16:27:29
+59,["Hyper-V"],50萬(含)以內,實體機整機(Windows),有需求尚無適當場所,google_cloud,aaa,aaa,aaa,200~500人,aaa,aaa,reachkenny@gmail.com,2016-11-02 21:25:04
+60,["Hyper-V","vSphere","Windows","Linux"],100萬以上,實體機整機(Windows),有需求尚無適當場所,others,bbb,bbb,bbb,500人以上,adfsa,dfasdf,reachkenny@gmail.com,2016-11-02 22:16:19
